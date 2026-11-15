@@ -1,0 +1,460 @@
+
+/* ========================================
+   00. FONTES PERSONALIZADAS
+======================================== */
+
+@font-face {
+    font-family: "Handies";
+    src: url('/Fonts/Handies/Trial.otf');
+}
+
+@font-face {
+    font-family: "Daustley";
+    src: url('/Fonts/Daustley.otf');
+}
+
+@font-face {
+    font-family: "BoldFont";
+    src: url('/Fonts/THEBOLDFONT-FREEVERSION.otf');
+}
+
+@font-face {
+    font-family: "COCOR";
+    src: url('/Fonts/Cocogoose-Pro-Regular-trial.ttf');
+}
+
+@font-face {
+    font-family: "ComfortaaRegular";
+    src: url('/Fonts/Comfortaa-Regular.ttf');
+}
+
+/* ========================================
+   01. CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f3ef;
+    color: #26352d;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================
+   02. MENU DE NAVEGAÇÃO #4B1701;
+======================================== */
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    padding: 12px 20px;
+    min-height: 104px;
+    background-color: #0F52BA;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
+}
+
+/* LOGOS */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-esquerda {
+    justify-self: start;
+}
+
+.logo-direita {
+    justify-self: end;
+}
+
+.logo img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* MENU CENTRALIZADO */
+
+.abas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.abas a {
+    color: #d6dad8;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: color 0.25s ease;
+}
+
+.abas a:hover {
+    color: #4B1701;
+}
+
+.abas a:focus-visible {
+    outline: 2px solid #4B1701;
+    outline-offset: 5px;
+    border-radius: 2px;
+}
+
+/* ========================================
+   03. TÍTULO DA PÁGINA
+======================================== */
+
+.titulo-site {
+    color: #4B1701;
+    text-align: center;
+    padding: 35px 20px;
+    background-color: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+}
+
+.titulo-site h1 {
+    margin-bottom: 5px;
+}
+
+.titulo-site p {
+    margin-top: 0;
+}
+
+/* ========================================
+   04. CONTEÚDO PRINCIPAL
+======================================== */
+
+.conteudo-principal {
+    width: 100%;
+    flex: 1;
+
+    /* GRADIENTE DE FUNDO */
+    background: linear-gradient(
+        155deg,
+        #c9f9df 0%,
+        #b5e6eb 43%,
+        #a5c6f7 100%
+    );
+    padding: 35px 20px;
+}
+
+/* ÁREA INTERNA */
+
+.conteudo-interno {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   05. APRESENTAÇÃO DAS REFERÊNCIAS
+======================================== */
+
+.apresentacao {
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 35px 40px;
+    border-radius: 18px;
+    margin-bottom: 35px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+    text-align: center;
+}
+
+.apresentacao h2 {
+    font-family: "Staatliches", sans-serif;
+    color: #0F52BA;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.apresentacao p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 12px;
+}
+
+/* ========================================
+   06. CARTÕES DAS CATEGORIAS
+======================================== */
+
+.categoria {
+    background-color: rgba(255, 255, 255, 0.90);
+    padding: 30px 40px;
+    border-radius: 18px;
+    margin-bottom: 28px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.categoria:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 13%);
+}
+
+/* ========================================
+   07. TÍTULOS DAS CATEGORIAS
+======================================== */
+
+.categoria-titulo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e8d9eb;
+    margin-bottom: 25px;
+}
+
+/* NÚMERO DA CATEGORIA */
+
+.numero-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #0F52BA;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+}
+
+/* TÍTULO E DESCRIÇÃO */
+
+.categoria-titulo h2 {
+    font-family: "Staatliches", sans-serif;
+    color: #0a0a0a;
+    font-size: 27px;
+    margin: 0 0 5px;
+}
+
+.categoria-titulo p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* ========================================
+   08. GRUPOS DE REFERÊNCIAS
+======================================== */
+
+.grupo-referencias {
+    margin-top: 22px;
+    padding: 18px 22px;
+    background-color: #f5f6fa;
+    border-left: 5px solid #0F52BA;
+    border-radius: 8px;
+}
+
+.grupo-referencias h3 {
+    color: #4B1701;
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* ========================================
+   AJUSTES DAS LISTAS BIBLIOGRÁFICAS
+======================================== */
+
+.lista-referencias {
+    padding-left: 28px;
+    margin: 0;
+}
+
+.lista-referencias li {
+    padding-left: 8px;
+    margin-bottom: 22px;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.lista-referencias li::marker {
+    color: #0F52BA;
+    font-weight: bold;
+}
+
+.lista-referencias li:last-child {
+    margin-bottom: 0;
+}
+
+.lista-referencias em {
+    display: inline-block;
+    margin-top: 5px;
+    color: #777;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .lista-referencias {
+        padding-left: 23px;
+    }
+
+    .lista-referencias li {
+        font-size: 14px;
+        padding-left: 4px;
+    }
+}
+
+/* ========================================
+   10. MENSAGEM FINAL
+======================================== */
+
+.mensagem-final {
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 35px 40px;
+    border-radius: 18px;
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+}
+
+.mensagem-final h2 {
+    font-family: "Staatliches", sans-serif;
+    color: #0F52BA;
+    font-size: 27px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.mensagem-final p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* ========================================
+   11. RODAPÉ
+======================================== */
+
+footer {
+    background-color: #f5f4f5;
+    color: #4B1701;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ========================================
+   12. RESPONSIVIDADE - TABLETS E CELULARES
+======================================== */
+
+@media (max-width: 700px) {
+
+    /* MENU */
+
+    .cabecalho {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        padding: 12px;
+
+    }
+
+    /* LOGOS */
+
+    .logo img {
+
+        width: 52px;
+        height: 52px;
+
+    }
+
+    /* ABAS */
+
+    .abas {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        gap: 15px;
+        flex-wrap: wrap;
+
+    }
+
+    .abas a {
+        font-size: 15px;
+    }
+
+    /* TÍTULO */
+
+    .titulo-site {
+        padding: 25px 15px;
+    }
+
+    /* CONTEÚDO */
+
+    .conteudo-principal {
+        padding: 25px 14px 40px;
+        background-size: auto 700px;
+    }
+
+    .apresentacao,
+    .categoria,
+    .mensagem-final {
+        padding: 25px 20px;
+    }
+
+    /* TÍTULOS */
+
+    .apresentacao h2 {
+        font-size: 25px;
+    }
+
+    .categoria-titulo {
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .categoria-titulo h2 {
+        font-size: 19px;
+    }
+
+    .categoria-titulo p {
+        font-size: 13px;
+    }
+
+    .numero-categoria {
+        min-width: 42px;
+        height: 42px;
+        font-size: 20px;
+    }
+
+    /* REFERÊNCIAS */
+
+    .grupo-referencias {
+        padding: 15px;
+    }
+
+    .lista-referencias li {
+        font-size: 14px;
+    }
+
+    /* MENSAGEM FINAL */
+
+    .mensagem-final h2 {
+        font-size: 29px;
+    }
+
+    .mensagem-final p {
+        font-size: 14px;
+    }
+
+}
