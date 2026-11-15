@@ -4,27 +4,27 @@
 
 @font-face {
     font-family: "Handies";
-    src: url('/Fonts/Handies/Trial.otf');
+    src: url('./Fonts/Handies/Trial.otf');
 }
 
 @font-face {
     font-family: "Daustley";
-    src: url('/Fonts/Daustley.otf');
+    src: url('./Fonts/Daustley.otf');
 }
 
 @font-face {
     font-family: "BoldFont";
-    src: url(/Fonts/THEBOLDFONT-FREEVERSION.otf);
+    src: url(./Fonts/THEBOLDFONT-FREEVERSION.otf);
 }
 
 @font-face {
     font-family: "COCOR";
-    src: url(/Fonts/Cocogoose-Pro-Regular-trial.ttf);
+    src: url(./Fonts/Cocogoose-Pro-Regular-trial.ttf);
 }
 
 @font-face {
     font-family: "ComfortaaRegular";
-    src: url(/Fonts/Comfortaa-Regular.ttf);
+    src: url(./Fonts/Comfortaa-Regular.ttf);
 }
 
 /* ========================================
